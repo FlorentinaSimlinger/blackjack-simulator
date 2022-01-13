@@ -12,5 +12,5 @@ making it a static class and do more research on how to test thoroughly with use
 up the main logic loop. I mainly tested the functionality of the Player class, which, however, mostly consists of simple operations,
  getters, and setters. 
 - Make the code more robust: it currently does not handle wrong user input (e.g., a string instead of a number).
-- Save Jacks, Queens, Kings, and Aces as such instead of their number value: For simplicity I added the number value
+- Save Jacks, Queens, Kings, and Aces as such instead of their number values: For simplicity, I added the number value
 of those cards. However, it would be more realistic if users knew that they drew, for instance, a Jack. 
