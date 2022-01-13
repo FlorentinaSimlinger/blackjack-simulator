@@ -1,32 +1,42 @@
 public class Player {
 
-    private static final int LIMIT = 21;
-    public int score;
-    public String status;
+    private final int LIMIT = 21;
+    private int score;
+    private boolean isPlaying;
+    private final String name;
 
     // constructor
-    public Player() {
+    public Player(String n) {
         score = 0;
-        status = "playing";
+        isPlaying = true;
+        name = n;
     }
 
-    // adds a value to this players score
-    public void addCard(int val) {
+    // updates the score
+    public void updateScore(int val) {
         score = score + val;
     }
 
     // returns true if the score is above the limit
     public boolean isAboveLimit() {
-        if (score > LIMIT) {
-            return true;
-        } else {
-            return false;
-        }
+        return score > LIMIT;
     }
 
-    // sets the status
-    public void setStatus(String s) {
-        status = s;
+    // setters and getters
+    public void setIsPlaying(boolean b) {
+        isPlaying = b;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public boolean getIsPlaying() {
+        return isPlaying;
+    }
+
+    public String getName() {
+        return name;
     }
 
 
